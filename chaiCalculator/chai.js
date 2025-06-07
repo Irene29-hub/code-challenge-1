@@ -1,41 +1,33 @@
 function calculateChaiIngredients() {
-    const recipe = {
-        water: { amount: 200, unit: 'ml'},
-        milk: { amount: 100, unit: 'ml'},
-        teaLeaves: { amount: 10, unit: 'tablespoon'},
-        sugar: { amount: 5, unit: 'tablespoon'},
-    }
-}
+    // Step 1: Ask the user how many cups they want
+    let input = prompt("Karibu! How many cups of Chai Bora would you like to make?");
+    
+    // Step 2: Convert the input into a number
+    let numberOfCups = Number(input);
 
-let numberOfCupsInput;
-let numberOfCups = 1;
-
-do {
-    numberOfCupsInput = prompt("Karibu! How many cups of chai would you like to make?");
-
-    if (numberofcupsinput === null) {
-        console.log("Chai calculation cancelled by the UserActivation.");
-        return;
-    }
-
-    numberofcups = parseInt(numberofCupsInput);
-
+    // Step 3: Check if the input is valid (a positive number)
     if (isNaN(numberOfCups) || numberOfCups <= 0) {
-        alert("Please enter a valid positive number for the cups of chai.");
+        console.log("Please enter a valid number greater than 0.");
+        return; // Stop the function if input is bad
     }
-} while (isNaN(numberOfCups) || numberOfCups <= 0);
-// calculate required amounts //
-const calculatedwater = numberOfCups * recipe.water.amount;
-const calculatedMilk = numberOfCups * recipe.milk.amount;
-const calculatedTeaLeaves = numberOfCups * recipe.teaLeaves.amount;
-const calculatedSugar = numberOfCups * recipe.sugar.amount;
-// Display the results //
-let output = `To make ${numberOfCups} cups of Kenyan chai, you will need:\n`;
-output += `Water: ${calculatedwater} ${recipe.water.unit} \n`;
-output += `Milk: ${calculatedMilk} ${recipe.milk.unit} \n`;
-output += `Tea Leaves (Majani): ${calculatedTeaLeaves} ${recipe.teaLeaves.unit}${calcutedTealeaves > 1 ? 's' :}\n`;
-output += `Sugar (Sukari): ${calculatedSugar} ${recipe.sugar.unit}${calculatedSugar > 1 ? 's' :} \n`;
-output += "Enjoy your Chai Bora!";
 
-console.log(output);
+    // Step 4: Define how much of each ingredient is needed per cup
+    const waterPerCup = 200;   // ml
+    const milkPerCup = 50;     // ml
+    const teaLeavesPerCup = 1; // tablespoons
+    const sugarPerCup = 2;     // teaspoons
 
+    // Step 5: Multiply each amount by the number of cups
+    let totalWater = waterPerCup * numberOfCups;
+    let totalMilk = milkPerCup * numberOfCups;
+    let totalTeaLeaves = teaLeavesPerCup * numberOfCups;
+    let totalSugar = sugarPerCup * numberOfCups;
+
+    // Step 6: Print the results in a friendly message
+    console.log(To make ${numberOfCups} cups of Kenyan Chai, you will need:);
+    console.log(Water: ${totalWater} ml);
+    console.log(Milk: ${totalMilk} ml);
+    console.log(Tea Leaves (Majani): ${totalTeaLeaves} tablespoons);
+    console.log(Sugar (Sukari): ${totalSugar} teaspoons);
+    console.log("\nEnjoy your Chai Bora!");
+}
