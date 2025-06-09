@@ -27,5 +27,8 @@ function estimateTransactionFee() {
     console.log(`Sending KES ${amountToSend}:`);
     console.log(`Calculated Transaction Fee: KES ${finalFee}`);
     console.log(`Total amount to be debited: KES ${totalDebit}`);
-    console.log(`\nSend Money Securely!`);
+    console.log(`"\nSend Money Securely!"`);
 }
+estimateTransactionFee();
+// This function estimates the transaction fee for sending money in a Swahili style.
+

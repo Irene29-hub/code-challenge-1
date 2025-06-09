@@ -29,5 +29,9 @@ function calculateChaiIngredients() {
     console.log(`Milk: ${totalMilk} ml`);
     console.log(`Tea Leaves (Majani): ${totalTeaLeaves} tablespoons`);
     console.log(`Sugar (Sukari): ${totalSugar} teaspoons`);
-    console.log(`\nEnjoy your Chai Bora!`);
+    console.log(`"\nEnjoy your Chai Bora!"`);
 }
+
+calculateChaiIngredients();
+// This function calculates the ingredients needed for making Chai in a Swahili style.
+

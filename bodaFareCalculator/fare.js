@@ -23,5 +23,9 @@ function calculateBodaFare() {
     console.log(`Ukikalia Pikipiki: KES ${baseFare}`);
     console.log(`Mpaka Uko: KES ${distanceInKm * chargePerKm}`);
     console.log(`Total: KES ${totalFare}`);
-    console.log(`\nPanda Pikipiki!`);
+    console.log(`"\nPanda Pikipiki!"`);
 }
+
+calculateBodaFare();
+// This function calculates the fare for a boda boda ride in a Swahili style.
+
