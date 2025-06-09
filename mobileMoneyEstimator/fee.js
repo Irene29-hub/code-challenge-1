@@ -7,7 +7,7 @@ function estimateTransactionFee() {
 
     // Step 3: Check if input is valid
     if (isNaN(amountToSend) || amountToSend <= 0) {
-        console.log("Tafadhali weka kiasi cha pesa halali.");
+        console.log("weka kiasi cha pesa halali.");
         return;
     }
 

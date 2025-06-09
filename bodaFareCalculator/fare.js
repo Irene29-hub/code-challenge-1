@@ -7,7 +7,7 @@ function calculateBodaFare() {
 
     // Step 3: Check if input is valid
     if (isNaN(distanceInKm) || distanceInKm < 0) {
-        console.log("Tafadhali weka idadi ya kilometer yenye maana.");
+        console.log("weka idadi ya kilometer yenye maana.");
         return;
     }
 
