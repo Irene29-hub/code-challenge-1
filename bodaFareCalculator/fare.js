@@ -19,9 +19,9 @@ function calculateBodaFare() {
     let totalFare = baseFare + (distanceInKm * chargePerKm);
 
     // Step 6: Print the result in Swahili style!
-    console.log('Uko kwote? Io ni ${distanceInKm} km:');
-    console.log('Ukikalia Pikipiki: KES ${baseFare}');
-    console.log('Mpaka Uko: KES ${distanceInKm * chargePerKm}');
-    console.log('Total: KES ${totalFare}');
-    console.log("\nPanda Pikipiki!");
+    console.log(`Uko kwote? Io ni ${distanceInKm} km:`);
+    console.log(`Ukikalia Pikipiki: KES ${baseFare}`);
+    console.log(`Mpaka Uko: KES ${distanceInKm * chargePerKm}`);
+    console.log(`Total: KES ${totalFare}`);
+    console.log(`\nPanda Pikipiki!`);
 }

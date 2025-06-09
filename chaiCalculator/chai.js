@@ -24,10 +24,10 @@ function calculateChaiIngredients() {
     let totalSugar = sugarPerCup * numberOfCups;
 
     // Step 6: Print the results in a friendly message
-    console.log('To make ${numberOfCups} cups of Kenyan Chai, you will need:');
-    console.log('Water: ${totalWater} ml');
-    console.log('Milk: ${totalMilk} ml');
-    console.log('Tea Leaves (Majani): ${totalTeaLeaves} tablespoons');
-    console.log('Sugar (Sukari): ${totalSugar} teaspoons');
-    console.log("\nEnjoy your Chai Bora!");
+    console.log(`To make ${numberOfCups} cups of Kenyan Chai, you will need:`);
+    console.log(`Water: ${totalWater} ml`);
+    console.log(`Milk: ${totalMilk} ml`);
+    console.log(`Tea Leaves (Majani): ${totalTeaLeaves} tablespoons`);
+    console.log(`Sugar (Sukari): ${totalSugar} teaspoons`);
+    console.log(`\nEnjoy your Chai Bora!`);
 }

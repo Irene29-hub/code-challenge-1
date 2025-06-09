@@ -24,8 +24,8 @@ function estimateTransactionFee() {
     let totalDebit = amountToSend + finalFee;
 
     // Step 8: Print result
-    console.log('Sending KES ${amountToSend}:');
-    console.log('Calculated Transaction Fee: KES ${finalFee}');
-    console.log('Total amount to be debited: KES ${totalDebit}');
-    console.log("\nSend Money Securely!");
+    console.log(`Sending KES ${amountToSend}:`);
+    console.log(`Calculated Transaction Fee: KES ${finalFee}`);
+    console.log(`Total amount to be debited: KES ${totalDebit}`);
+    console.log(`\nSend Money Securely!`);
 }
