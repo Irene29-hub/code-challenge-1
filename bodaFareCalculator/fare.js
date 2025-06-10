@@ -18,7 +18,7 @@ function calculateBodaFare() {
     // Step 5: Calculate total fare
     let totalFare = baseFare + (distanceInKm * chargePerKm);
 
-    // Step 6: Print the result in Swahili style!
+    // Step 6: Print the result 
     console.log(`Uko kwote? Io ni ${distanceInKm} km:`);
     console.log(`Ukikalia Pikipiki: KES ${baseFare}`);
     console.log(`Mpaka Uko: KES ${distanceInKm * chargePerKm}`);
@@ -27,5 +27,5 @@ function calculateBodaFare() {
 }
 
 calculateBodaFare();
-// This function calculates the fare for a boda boda ride in a Swahili style.
+// This function calculates the fare for a boda boda ride.
 

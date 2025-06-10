@@ -30,5 +30,5 @@ function estimateTransactionFee() {
     console.log(`"\nSend Money Securely!"`);
 }
 estimateTransactionFee();
-// This function estimates the transaction fee for sending money in a Swahili style.
+// This function estimates the transaction fee for sending money.
 
